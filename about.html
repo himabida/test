@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMDABIDA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--header site -->
+<header>
+    <div class="logo"><span>HIMA </span>BIDA</div>
+    <ul class="navlist">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about"  >About</a></li>
+        <li><a href="index.html#structure">Structure</a></li>
+        <li><a href="index.html#events"  >Events</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+    </ul>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+        <button id="searchButton" class="search-btn">Cari</button>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    
+    
+<div class="header-icons">
+    <a href="#" id="user-icon"><img src="user.png" alt="User"></a>
+    
+    <!-- Dropdown Profile -->
+    <div id="profile-menu" class="hidden">
+        <div class="profile-info">
+            <img id="profile-pic" src="default.jpg" alt="Foto Profil">
+            <p id="profile-name">Nama</p>
+        </div>
+        <ul>
+            <li><a href="#" id="edit-profile">Edit Profile</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </div>
+</div>
+        <div class="bx bx-menu" id="menu-icon"> </div>
+</header>
+
+
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>Tentang <span>HIMABIDA</span></h1>
+            <p>Mengenal lebih dalam tentang Himpunan Mahasiswa Bisnis Digital</p>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <h2>Sejarah <span>HIMABIDA</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2023 - Pendirian</h3>
+                    <p>HIMABIDA didirikan sebagai wadah mahasiswa Bisnis Digital pertama di Universitas Pelita Bangsa</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2024 - Pencapian</h3>
+                    <p>Sukses menyelenggarakan berbagai event termasuk Seminar, Field Study, Litbook & Ecopark, dan kegiatan menarik lainnya.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2025 - Visi Masa Depan</h3>
+                    <p>Menjadi himpunan mahasiswa bisnis digital terdepan di Jawa Barat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Studi Section -->
+    <section class="prodi-section">
+        <div class="prodi-tabs">
+            <button class="prodi-tab active" data-tab="profil">Profil</button>
+            <button class="prodi-tab" data-tab="visi-misi">Visi & Misi</button>
+            <button class="prodi-tab" data-tab="tujuan">Tujuan & Sasaran</button>
+            <button class="prodi-tab" data-tab="prospek">Prospek Karir</button>
+        </div>
+
+        <div class="prodi-content">
+           
+            <div class="tab-content active" id="profil">
+                <h3>Apa itu Program Studi Bisnis Digital?</h3>
+                <p>Program studi Bisnis Digital adalah rumpun ilmu terapan yang pengaplikasiannya mempelajari tentang proses perancangan suatu bisnis digital. Bidang ilmu Bisnis Digital merupakan perpaduan dari ilmu manajemen, bisnis, ekonomi, sistem informasi, hingga teknik informatika.</p>
+                
+                <div class="why-choose">
+                    <h3>Kenapa memilih Program Studi Bisnis Digital?</h3>
+                    <div class="reasons-grid">
+                        <div class="reason-card">
+                            <i class='bx bx-globe'></i>
+                            <h4>Pasar Digital Besar</h4>
+                            <p>Indonesia pengguna internet terbesar ke-4 di dunia</p>
+                        </div>
+                        <div class="reason-card">
+                            <i class='bx bx-trending-up'></i>
+                            <h4>Peluang Bisnis</h4>
+                            <p>Penjualan retail digital terus meningkat setiap tahun</p>
+                        </div>
+                        <div class="reason-card">
+                            <i class='bx bx-code-alt'></i>
+                            <h4>Kurikulum Modern</h4>
+                            <p>Mempelajari start-up digital, big data, dan AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-content" id="visi-misi">
+                <div class="vision-mission-grid">
+                    <div class="vision-card">
+                        <h3>Visi</h3>
+                        <p>Terwujudnya Program Studi yang menghasilkan lulusan unggul dalam bidang Bisnis Digital dengan karakter teknopreneur berkelas Internasional pada tahun 2045.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h3>Misi</h3>
+                        <ul>
+                            <li>1. Melaksanakan pendidikan yang bermutu dengan menyiapkan lulusan yang inovatif, tekun, berkarakter teknopreneur dan siap kerja.</li>
+                            <li>2. Melaksanakan penelitian yang bermutu dengan mengikuti perkembangan ilmu bisnis digital dan terpublikasikan secara nasional maupun internasional.</li>
+                            <li>3. Melaksanakan pengabdian bermutu yang berorientasi pada penelitian guna meningkatan kemandirian masyarakat dalam berteknopreneur.</li>
+                            <li>4. Menjalain kerjasama dengan perguruan tinggi lain, pemerintah ataupun swasta dari dalam negeri ataupun luar negeri dengan prinsip kolaborasi, kesetaraan, dan ilmu pengetahuan.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="motto-card">
+                    <h3>Moto</h3>
+                    <p>"Siap Menjadi Teknopreneur"</p>
+                </div>
+            </div>
+
+     
+            <div class="tab-content" id="tujuan">
+                <div class="goals-grid">
+                    <div class="goals-card">
+                        <h3 style="text-align:center;">Tujuan</h3>
+                        <ul>
+                            <li>1. Menyelenggarakan kegiatan pembelajaran, penelitian dan pengabdian kepada masyarakat dalam bidang bisnis digital.</li>
+                            <li>2. Menjalin kerja sama dengan lembaga pendidikan, pemerintah, perusahaan swasta, dunia industri baik dalam negeri ataupun luar negeri.</li>
+                            <li>3. Meningkatkan kompetensi mahasiswa dan dosen guna memperoleh keunggulan kompetitif dalam bidang bisnis digital.</li>
+                            <li>4. Meningkatkan literasi ilmu dibidang bisnis digital agar dapat membantu menyelesaikan permasalahan masyarakat dan pemangku kepentingan.</li>
+                        </ul>
+                    </div>
+                    <div class="targets-card">
+                        <h3 style="text-align: center;">Sasaran</h3>
+                        <ul>
+                            <li>1. Pemantauan hasil pembelajaran program studi.</li>
+                            <li>2. Pengembangan softskill mahasiswa.</li>
+                            <li>3. Peningkatan jumlah mahasiswa dan/atau lulusan yang jiwa teknopreneur.</li>
+                            <li>4. Pengembangan metode pembelajaran yang berbeda.</li>
+                            <li>5. Evalusai dan peningkatan kualitas tenaga pendidik dalam menyampaikan materi pembelajaran.</li>
+                            <li>6. Peningkatan reputasi prodi.</li>
+                            <li>7. Terwujudnya publikasi ilmiah hasil penelitian.</li>
+                            <li>8. Peningkatan sitasi publikasi ilmiah.</li>
+                            <li>9. Terwujudnya publikasi ilmiah hasil pengabdian kepada masyarakat.</li>
+                            <li>10. Terwujudnya usaha mahasiswa berbasis teknopreneur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="prospek">
+                <h3>Prospek Karir Lulusan</h3>
+                <div class="career-grid">
+                    <div class="career-card">
+
+
+<i class='bx bx-line-chart'></i>
+                        <h4>Business Analyst</h4>
+                        <p>Menganalisis kebutuhan bisnis dan merancang solusi digital</p>
+                    </div>
+                    <div class="career-card">
+                        <i class='bx bx-store-alt'></i>
+                        <h4>Digital Marketer</h4>
+                        <p>Mengelola pemasaran produk melalui platform digital</p>
+                    </div>
+                    <div class="career-card">
+                        <i class='bx bx-code-curly'></i>
+                        <h4>IT Consultant</h4>
+                        <p>Memberikan konsultasi teknologi untuk bisnis</p>
+                    </div>
+                    <div class="career-card">
+                        <i class='bx bx-rocket'></i>
+                        <h4>Technopreneur</h4>
+                        <p>Membangun startup berbasis teknologi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akreditasi Section -->
+    <section class="accreditation-section">
+        <h2>Akreditasi <span>Program Studi</span></h2>
+        <div class="accreditation-cards">
+            <div class="accreditation-card">
+                <i class='bx bx-certification'></i>
+                <h3>Sertifikat Akreditasi</h3>
+                <p>Universitas Pelita Bangsa Sarjana Bisnis Digital</p>
+                <a href="882.pdf" class="download-btn">Download</a>
+            </div>
+            <div class="accreditation-card">
+                <i class='bx bx-file'></i>
+                <h3>SK Peringkat Akreditasi</h3>
+                <p>Universitas Pelita Bangsa Sarjana Bisnis Digital</p>
+                <a href="1659_SK.pdf" class="download-btn">Download</a>
+            </div>
+            <div class="accreditation-card">
+                <i class='bx bx-book'></i>
+                <h3>Pengantar SK Akreditasi</h3>
+                <p>Universitas Pelita Bangsa Sarjana Bisnis Digital</p>
+                <a href="1659_Sertifikat.pdf" class="download-btn">Download</a>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Contact section ------------------------------------------------------------------->
+ 
+<section id="contact" class="contant">
+    <div class="main-text" style="text-align: center;" height="500px">
+        <span style="font-size: 30px; font-weight: bold; ">Hubungi Kami</span>
+        <h2 style="font-size: 15px ; font-weight: bold;">Kirim Pesan Sekarang</h2>
+    
+    <form method="post" name="wpu-contact-form" action=""class="scroll-top">
+        
+        <input type="text" placeholder="Nama" name="nama">
+        <input type="text" placeholder="Nomor Hp" name="number" id="number">
+        <input type="email" placeholder="Email" name="email" id="email">
+        <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Pesan Anda" name="pesan"></textarea>
+        <div class="btn-box formBtn"> 
+            <button type="submit" onclick="sendMessage(event)" action="https://script.google.com/macros/s/AKfycbwICW7CVt6Uc9RXhobYfdwmrfg15lGI1g2HPicViIfHhbormwor5fjDPgPlO5fGMXKA/exec" class="btn btn-primary d-none btn-kirim" >Kirim Pesan</button>
+
+        </div>
+            
+        
+    </form>
+</div>
+    <div class="map-container">
+        <div class="mapBg" style="text-align: center;" height="500px"> </div>
+            <div class="map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5351963636826!2d107.16658007355592!3d-6.324611661884165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b0c08ad8d01%3A0x2b18001d1b1371f9!2sUNIVERSITAS%20PELITA%20BANGSA!5e0!3m2!1sid!2sid!4v1742002149578!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+        
+    </div>
+</section>
+
+
+<!-- footer website -->
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="hima2.png"   style="height: 150px; width: 150px; margin-left: 50px;
+            margin-top: 19px;" class="hima" >
+        
+        </div>
+        <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>Jl. Inspeksi Kalimalang</p>
+            <p>Tegal Danas Arah Deltamas</p>
+            <p>Cibatu, Kec. Cikarang Pusat, Bekasi </p>
+            <p>Jawa Barat 17530</p>
+            <p class="email-id">Himabidanew@gmail.com</p>
+        </div>
+
+        
+        <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#voting">Voting</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+ 
+        </div>
+
+        <div class="col">
+           
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form onsubmit="showAlert(event)" style=" padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 50px;">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Masukan email anda" required>
+                <button type="submit" ><i class='bx bx-right-arrow-alt'></i></i></button>
+            </form>
+            <div class="social-icons" style="margin-top: 1rem;">
+                <a href="https://www.instagram.com/himabisnisdigital_upb?igsh=OXZ3MHpvdno1eXpp"><i class='bx bxl-instagram'></i></a>
+                <a href="https://m.youtube.com/@bisnisdigitalupbofficial"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://www.tiktok.com/@himabidaupb?_t="><i class='bx bxl-tiktok' ></i></a>
+            </div>  
+            
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright &copy; 2025 by Himpunan Mahasiswa Bisnis Digital || All Right Reserved.</p>
+ </footer>
+ <script>
+
+// Tab functionality and animations
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. TAB SYSTEM IMPROVEMENTS
+    const tabs = document.querySelectorAll('.prodi-tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    // Error handling for tabs
+    if (tabs.length > 0 && tabContents.length > 0) {
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                tabs.forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                
+                // Remove active class from all contents
+                tabContents.forEach(c => {
+                    c.classList.remove('active');
+                    c.setAttribute('aria-hidden', 'true');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+                
+                // Show corresponding content
+                const tabId = this.getAttribute('data-tab');
+                const targetContent = document.getElementById(tabId);
+                
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                    targetContent.setAttribute('aria-hidden', 'false');
+                    
+                    // Smooth scroll to content (optional)
+                    targetContent.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest'
+                    });
+                } else {
+                    console.error('Target content not found:', tabId);
+                }
+            });
+        });
+        
+        // Activate first tab by default
+        tabs[0].classList.add('active');
+        tabs[0].setAttribute('aria-selected', 'true');
+        tabContents[0].classList.add('active');
+        tabContents[0].setAttribute('aria-hidden', 'false');
+    } else {
+        console.warn('Tab elements not found');
+    }
+
+    // 2. TIMELINE ANIMATIONS
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    if (timelineItems.length > 0) {
+        const timelineObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)';
+                    // Stop observing after animation
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { 
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px' // Trigger when 50px from bottom
+        });
+        
+        timelineItems.forEach((item, index) => {
+            // Initial hidden state
+            item.style.opacity = '0';
+            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            
+            // Alternate directions
+            if (index % 2 === 0) {
+                item.style.transform = 'translateX(-30px)';
+            } else {
+                item.style.transform = 'translateX(30px)';
+            }
+            
+            // Start observing
+            timelineObserver.observe(item);
+        });
+    }
+
+    // 3. ACCREDITATION CARDS ANIMATIONS
+    const accredCards = document.querySelectorAll('.accreditation-card');
+    if (accredCards.length > 0) {
+        const cardObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+
+entry.target.style.transform = 'translateY(0)';
+                        // Stop observing after animation
+                        observer.unobserve(entry.target);
+                    }, index * 150); // Staggered delay
+                }
+            });
+        }, { 
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        accredCards.forEach(card => {
+            // Initial hidden state
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.transitionDelay = '0s'; // Reset delay
+            
+            // Start observing
+            cardObserver.observe(card);
+        });
+    }
+});
+
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+ // Menampilkan & Menyembunyikan Form Login/Register
+ document.querySelector(".login-btn").addEventListener("click", function() {
+     document.querySelector(".login-form").classList.add("active");
+     document.querySelector(".register-form").classList.remove("active");
+ });
+ 
+ document.querySelector(".register-btn").addEventListener("click", function() {
+     document.querySelector(".register-form").classList.add("active");
+     document.querySelector(".login-form").classList.remove("active");
+ });
+ 
+ document.addEventListener("DOMContentLoaded", function () {
+    let user = localStorage.getItem("loggedInUser");
+    let userIcon = document.getElementById("user-icon");
+    let profileMenu = document.getElementById("profile-menu");
+
+    if (user) {
+        user = JSON.parse(user);
+        document.getElementById("profile-name").innerText = user.nama;
+        userIcon.src = "profile.png"; // Ubah icon ke foto profile
+        userIcon.addEventListener("click", function () {
+            profileMenu.classList.toggle("active");
+        });
+    } else {
+        userIcon.addEventListener("click", function () {
+            document.querySelector(".account-form").classList.add("active");
+        });
+    }
+
+    document.getElementById("close-form").addEventListener("click", function () {
+        document.querySelector(".account-form").classList.remove("active");
+    });
+
+    document.getElementById("logout").addEventListener("click", function () {
+        localStorage.removeItem("loggedInUser");
+        location.reload();
+    });
+});
+
+ if (!localStorage.getItem("users")) {
+     localStorage.setItem("users", JSON.stringify([]));
+ }
+ 
+ // Fungsi Register
+ function handleRegister(event) {
+     event.preventDefault();
+ 
+     let nama = document.getElementById("register-nama").value.trim();
+     let email = document.getElementById("register-email").value.trim();
+     let nim = document.getElementById("register-nim").value.trim();
+ 
+     if (!nama || !email || !nim) {
+         alert("Semua kolom harus diisi!");
+         return;
+     }
+ 
+     let users = JSON.parse(localStorage.getItem("users"));
+ 
+     if (users.some(user => user.email === email)) {
+         alert("Email sudah terdaftar!");
+         return;
+     }
+ 
+     users.push({ nama, email, nim });
+     localStorage.setItem("users", JSON.stringify(users));
+ 
+     alert("Registrasi berhasil! Silakan login.");
+     document.getElementById("registerForm").reset();
+     document.querySelector(".login-form").classList.add("active");
+     document.querySelector(".register-form").classList.remove("active");
+ }
+ 
+ // Fungsi Login
+ function handleLogin(event) {
+     event.preventDefault();
+ 
+     let emailInput = document.getElementById("login-email").value.trim();
+     let nimInput = document.getElementById("login-nim").value.trim();
+ 
+     let users = JSON.parse(localStorage.getItem("users"));
+ 
+     let user = users.find(u => u.email === emailInput && u.nim === nimInput);
+ 
+     if (user) {
+         localStorage.setItem("loggedInUser", JSON.stringify(user));
+         alert("Login berhasil! Selamat datang, " + user.nama);
+         window.location.href = "index.html"; // Redirect ke dashboard
+     } else {
+         alert("Login gagal! Periksa kembali email dan NIM Anda.");
+     }
+ }
+</script> 
+
+<script>
+    
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const searchResults = document.getElementById('searchResults');
+    
+    // Data pencarian
+    const searchData = [
+     
+      { 
+        keywords: ['home', 'beranda', 'halaman utama'], 
+        title: "Home", 
+        description: "Kembali ke halaman utama", 
+        url: "https://himabida.github.io/hima/#home" 
+      },
+      { 
+        keywords: ['about', 'tentang', 'profil', 'tentang kami'], 
+        title: "About", 
+        description: "Tentang Hima Bida", 
+        url: "https://himabida.github.io/hima/about.html" 
+      },
+      { 
+        keywords: ['event', 'acara', 'kegiatan', 'events'], 
+        title: "Event & Acara", 
+        description: "Lihat kegiatan terbaru kami", 
+        url: "https://himabida.github.io/hima/#events" 
+      },
+      { 
+        keywords: ['marketing', 'bisnis', 'inspirasi', 'blog'], 
+        title: "Marketing & Bisnis", 
+        description: "Artikel inspirasi bisnis", 
+        url: "https://himabida.github.io/hima/#blog" 
+      },
+      { 
+        keywords: ['partners', 'kerjasama', 'partner', 'sponsor'], 
+        title: "Partnership", 
+        color: "blue",
+        description: "Kerjasama dengan Hima Bida", 
+        url: "https://himabida.github.io/hima/partnership.html" 
+      }
+    ];
+    
+    function performSearch() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      searchResults.innerHTML = '';
+      
+      if (!searchTerm) {
+        searchResults.style.display = 'none';
+        return;
+      }
+      
+      const results = searchData.filter(function(item) {
+        return item.keywords.some(function(keyword) {
+          return keyword.includes(searchTerm) || searchTerm.includes(keyword);
+        });
+      });
+      
+      if (results.length > 0) {
+        searchResults.style.display = 'block';
+        
+        results.forEach(function(result) {
+          const resultItem = document.createElement('div');
+          resultItem.className = 'search-item';
+          resultItem.style.color = 'black'; // <-- TEKS HITAM
+          
+          const title = document.createElement('div');
+          title.className = 'search-title';
+          title.textContent = result.title;
+          title.style.color = 'black'; // <-- JUDUL HITAM
+          title.style.fontWeight = 'bold';
+          
+          const desc = document.createElement('div');
+          desc.className = 'search-desc';
+          desc.textContent = result.description;
+          desc.style.color = 'black'; // <-- DESKRIPSI HITAM
+          
+          resultItem.appendChild(title);
+          resultItem.appendChild(desc);
+          
+          resultItem.addEventListener('click', function() {
+            window.location.href = result.url;
+          });
+          
+          searchResults.appendChild(resultItem);
+        });
+      } else {
+        searchResults.style.display = 'block';
+        const noResults = document.createElement('div');
+        noResults.className = 'search-item';
+        noResults.textContent = 'Tidak ditemukan hasil untuk "' + searchTerm + '"';
+        noResults.style.color = 'black'; // <-- PESAN ERROR HITAM
+        searchResults.appendChild(noResults);
+      }
+    }
+    
+    searchButton.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', performSearch);
+    
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.search-box')) {
+        searchResults.style.display = 'none';
+      }
+    });
+  });
+S
+</script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyM26AxkD1h_OLtQ-Vk44ByWuuFT9zpJojL2vBIBk-MFiudJMhYnOK3WTVr-__r-R7RBg/exec';
+        const form = document.forms['wpu-contact-form']
+
+
+        function sendMessage(event) {
+      event.preventDefault(); // Mencegah refresh halaman
+
+      // Ambil nilai input
+      let number = document.getElementById("number").value.trim();
+      let email = document.getElementById("email").value.trim();
+
+      // Cek apakah nomor HP atau email kosong
+      if (number === "" || email === "") {
+          swal({
+              title: "Gagal!",
+              text: "Nomor HP dan Email harus diisi.",
+              icon: "error",
+          });
+          return; // Hentikan proses jika ada input yang kosong
+      }
+
+      // Jika semua input terisi, lanjutkan pengiriman data
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+              swal({
+                  title: "Berhasil!",
+                  text: "Pesan Anda telah dikirim.",
+                  icon: "success",
+              }).then(() => {
+                  form.reset(); // Reset form setelah alert ditutup
+              });
+          })
+          .catch(error => {
+              swal({
+                  title: "Gagal!",
+                  text: "Terjadi kesalahan saat mengirim pesan.",
+                  icon: "error",
+              });
+          });
+  }
+
+    
+
+       
+      </script>
+
+      <script>
+  function showAlert(event) {
+    event.preventDefault(); // Mencegah form melakukan submit (refresh halaman)
+
+    swal({
+      title: "Successfully",
+      text: "Terimakasih sudah mengaktifkan newsletter kami!",
+      icon: "success",
+    });
+  }
+</script>
+</body>
+</html>

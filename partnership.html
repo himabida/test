@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Partner with Team Core</title>
+  <style>
+    /* GLOBAL STYLES */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #00fddb, #2c3e50);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FORM STYLES */
+    .partnership-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-top: -50px;
+      position: relative;
+      z-index: 10;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select,
+    .form-group file-upload {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+    }
+
+    /* FILE UPLOAD STYLES */
+    .file-upload {
+      border: 2px dashed #3498db;
+      padding: 2rem;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .file-upload:hover {
+      background: #f0f8ff;
+    }
+    .file-hint {
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+
+    /* SUBMIT BUTTON */
+    .submit-btn {
+      background: linear-gradient(90deg, #f1c40f, #e67e22);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+      display: block;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(230,126,34,0.3);
+    }
+
+    /* BENEFITS SECTION */
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1>Let's Create Something Amazing</h1>
+      <p>Join forces with Team Core and unlock new opportunities together</p>
+    </div>
+  </section>
+
+  <!-- PARTNERSHIP FORM -->
+  <div class="container">
+    <div class="partnership-form">
+      <h2>Partnership Proposal</h2>
+      <form id="partnerForm">
+        <div class="form-group">
+          <label for="name">Your Name / Company</label>
+          <input type="text" id="name" required placeholder="e.g. John Doe or ABC Corp">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="type">Partnership Type</label>
+          <select id="type" required>
+            <option value="">Select...</option>
+            <option value="sponsor">Sponsorship</option>
+            <option value="collab">Collaboration</option>
+            <option value="network">Networking</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+
+<div class="form-group">
+          <label for="message">Your Proposal Details</label>
+          <textarea id="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Proposal File (Optional)</label>
+          <div class="file-upload" id="fileUpload">
+            <p>📁 Drag & drop your file here or click to browse</p>
+            <small class="file-hint">Supports: PDF, DOCX (Max 5MB)</small>
+            <input type="file" id="proposalFile" accept=".pdf,.doc,.docx" style="display: none;">
+          </div>
+          <div id="fileName" style="margin-top: 0.5rem;"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">SUBMIT PROPOSAL</button>
+      </form>
+    </div>
+
+    <!-- BENEFITS SECTION -->
+    <div class="benefits">
+      <div class="benefit-card">
+        <h3>🤝 Mutual Benefits</h3>
+        <p>We create win-win partnerships that drive growth for both parties.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>🚀 Network Expansion</h3>
+        <p>Access our network of professionals and communities.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>💡 Innovative Solutions</h3>
+        <p>Combine our expertise to create groundbreaking projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // File Upload Interaction
+    const fileUpload = document.getElementById('fileUpload');
+    const fileInput = document.getElementById('proposalFile');
+    const fileName = document.getElementById('fileName');
+
+    fileUpload.addEventListener('click', () => fileInput.click());
+    
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length > 0) {
+        fileName.innerHTML = '<span style="color:green">✓</span> Selected: <strong>${e.target.files[0].name}</strong>';
+        fileUpload.style.borderColor = "#2ecc71";
+      }
+    });
+
+    // Drag & Drop Functionality
+    fileUpload.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      fileUpload.style.background = "#f0f8ff";
+    });
+
+    fileUpload.addEventListener('dragleave', () => {
+      fileUpload.style.background = "white";
+    });
+
+    fileUpload.addEventListener('drop', (e) => {
+      e.preventDefault();
+      fileUpload.style.background = "white";
+      if (e.dataTransfer.files.length) {
+        fileInput.files = e.dataTransfer.files;
+        fileName.innerHTML = '<span style="color:green">✓</span> Selected: <strong>${e.target.files[0].name}</strong>';
+        fileUpload.style.borderColor = "#2ecc71";
+      }
+    });
+
+    // Form Submission
+    document.getElementById('partnerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Simple validation
+      if (!document.getElementById('name').value) {
+        alert('Please enter your name/company');
+        return;
+      }
+
+      // Create FormData object
+      const formData = new FormData();
+      formData.append('name', document.getElementById('name').value);
+      formData.append('email', document.getElementById('email').value);
+      formData.append('type', document.getElementById('type').value);
+      formData.append('message', document.getElementById('message').value);
+      
+      if (fileInput.files[0]) {
+        formData.append('file', fileInput.files[0]);
+      }
+
+      // Show loading state
+      const btn = e.target.querySelector('button');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      // Simulate API call
+      setTimeout(() => {
+        console.log('Form data:', Object.fromEntries(formData));
+        alert('🎉 Proposal submitted successfully! We will contact you soon.');
+        btn.disabled = false;
+        btn.textContent = 'SUBMIT PROPOSAL';
+        document.getElementById('partnerForm').reset();
+        fileName.textContent = '';
+        fileUpload.style.borderColor = "#3498db";
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

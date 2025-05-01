@@ -1,0 +1,76 @@
+/* ===== RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+    /* Home Section */
+    #home .container {
+      padding: 20px 15px !important;
+    }
+    
+    /* About Section */
+    #about .row {
+      flex-direction: column-reverse;
+    }
+    #about img {
+      width: 100% !important;
+      margin-top: 20px;
+    }
+    
+    /* Structure Section */
+    .structure-item {
+      margin-bottom: 15px;
+    }
+    
+    /* Contact Section */
+    #contact .row {
+      flex-direction: column;
+    }
+    .contact-form, 
+    .contact-info {
+      width: 100% !important;
+      padding: 0 15px !important;
+    }
+    
+    /* Footer */
+    .footer-links {
+      flex-direction: column !important;
+      align-items: center;
+    }
+    .footer-links a {
+      margin: 5px 0 !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Perbaikan untuk HP kecil */
+    .navbar-brand img {
+      width: 120px !important;
+    }
+    h1 {
+      font-size: 1.8rem !important;
+    }
+    h2 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+@media (max-width: 768px) {
+  section {
+    padding: 30px 0 !important;
+  }
+  .container {
+    padding: 0 15px !important;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: #fff !important;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}

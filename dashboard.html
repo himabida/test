@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Selamat Datang di Dashboard</h1>
+    <p id="user-info">Memuat data...</p>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        let user = localStorage.getItem("loggedInUser");
+    
+        if (user) {
+            user = JSON.parse(user);
+            document.getElementById("user-info").innerText = `Halo, ${user.nama} (${user.nim})!`;
+        } else {
+            alert("Anda belum login!");
+            window.location.href = "index.html";
+        }
+    
+        function logout() {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
