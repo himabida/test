@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMDABIDA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+        header.sticky{
+            background: white;
+            border-bottom: 1px solid var(--secon-bg-color);
+            padding: 10px 1%;
+        }
+                /* Global Styles */
+                :root {
+                    --primary-color: #205C8B;
+                    --secondary-color: #D8EEFE;
+                    --accent-color: #001C8E;
+                    --dark-color: rgb(36, 32, 32);
+                    --hover-color: #00FDDB;
+                    --neon-box-shadow: 0 0 10px rgba(0, 253, 219, 0.5);
+                }
+                
+              
+               
+        .navlist{
+            display: flex;
+        }
+        .navlist a{
+            color: rgb(36, 32, 32); 
+            font-weight: 600;
+            padding: 10px 15px;
+        }
+        .navlist a.active{
+            color: #001C8E;
+        }
+        
+        .navlist a:hover{
+            color:#001C8E;
+            text-shadow: 0 0 50px #001C8E,
+            0 0 20px #00251f,
+            0 0 30px #00251f,
+            0 0 40px #00251f,
+            0 0 70px #00251f,
+            0 0 80px #00251f,
+            0 0 100px #00251f,
+            0 0 150px #00251f,
+        }
+        
+        
+               /* Contact Section */
+               .contact-sectionss {
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
+                    padding: 20px 5%;
+                }
+                
+                .contact-sectionss h2 {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    margin-bottom: 15px;
+                }
+                
+                .contact-sectionss h2 span {
+                    color: var(--accent-color);
+                }
+                
+                .contact-containers {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 50px;
+                    max-width: 1200px;
+                   
+                    margin: 0 auto;
+                }
+                
+                .contact-forms {
+                    background: rgba(0, 0, 0, 0.2);
+                    padding: 30px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(0, 253, 219, 0.2);
+                }
+                
+                .contact-forms h3 {
+                    color: var(--secondary-color);
+                    margin-bottom: 20px;
+                    font-size: 1.2rem;
+                }
+                
+                .form-group {
+                    margin-bottom: 20px;
+                }
+                
+                .form-group label {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: var(--secondary-color);
+                }
+                
+                .form-group input,
+                .form-group textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid rgba(216, 238, 254, 0.3);
+                    background: rgba(216, 238, 254, 0.1);
+                    border-radius: 5px;
+                    color: var(--secondary-color);
+                }
+                
+                .form-group textarea {
+                    height: 150px;
+                    resize: vertical;
+                }
+                
+                .submit-btn {
+                    background: var(--secondary-color);
+                    color: var(--dark-color);
+                    border: none;
+                    padding: 12px 25px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                }
+                
+                .submit-btn:hover {
+                    background: var(--primary-color); }
+                
+                .contact-info {
+                    background: rgba(0, 0, 0, 0.2);
+                    padding: 30px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(0, 253, 219, 0.2);
+                }
+                
+                .contact-info h3 {
+                    color: var(--secondary-color);
+                    margin-bottom: 20px;
+                    font-size: 1.2rem;
+                }
+                
+                .info-item {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+                }
+                
+                .info-item i {
+                    font-size: 1.2rem;
+                    color: var(--neon-box-shadow);
+                    margin-right: 15px;
+                    margin-top: 3px;
+                }
+                
+                .info-content h4 {
+                    color: var(--neon-box-shadow);
+                    margin-bottom: 5px;
+                }
+                
+                .info-content p, .info-content a {
+                    color: rgba(216, 238, 254, 0.8);
+                    text-decoration: none;
+                }
+                
+                .info-content a:hover {
+                    color: var(--hover-color);
+                }
+                
+                .map-containers {
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                }
+                
+                .map-containers iframe {
+                    width: 100%;
+                    height: 400px;
+                    border: none;
+                }
+                  /* Animations */
+                  @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                
+                /* Responsive Styles */
+                
+                
+            </style>
+                
+</head>
+<body>
+<!--header site -->
+<header>
+    <div class="logo" style="color: rgb(36, 32, 32);"><span>HIMA</span>BIDA</div>
+    <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#blog">Blog</a></li>
+    </ul>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+        <button id="searchButton" class="search-btn">Cari</button>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    
+
+        <div class="bx bx-menu" id="menu-icon"> </div>
+</header>
+
+
+
+<!-- home section ------------------------- ------------------------------------------>
+<section id="home" class="home">
+    <div class="home-content">
+        <h1 style="color: rgb(36, 32, 32); font-size: 29px;" >Himpunan Mahasiswa Bisnis Digital</h1>
+        <h1 style="color: rgb(36, 32, 32); font-size: 27px; margin-top: 0;">Universitas Pelita Bangsa</h1>
+        <div class="change-text">
+            <h3 style="color: rgb(36, 32, 32); font-size: 24px;">We Are</h3>
+            <h3 style="font-size: 25px;">
+                <span class="word">Creating &nbsp; impact</span>
+                <span class="word">Building &nbsp; leaders</span>
+                <span class="word">Empowering &nbsp; students</span>
+            </h3>
+        </div>
+        <p class="text-justify" style="color:rgb(36, 32, 32);">Join a dynamic community where passion meets purpose. Whether you're here to grow, lead, or connect, we provide the platform to shape your journey.   
+        <span class="typing-text-mobile" style="font-weight: bold;"> Be part of something bigger, be the change. </span> </p>
+          
+
+             <div class ="btn-box">
+                <a href="https://canva.com" class="btn">   <img src="playstore.jpg" height=50px alt=""> </a>
+                
+            </div>
+
+             <div class="social-icons">
+                <a href="https://www.instagram.com/himabisnisdigital_upb?igsh=OXZ3MHpvdno1eXpp"><i class='bx bxl-instagram'></i></a>
+                <a href="https://m.youtube.com/@bisnisdigitalupbofficial"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://www.tiktok.com/@himabidaupb?_t="><i class='bx bxl-tiktok' ></i></a>
+            </div>  
+
+            <div class="col">
+                <img src="hima2.png"   style="height: 100px; width: 120px;" class="hima" >
+            
+        
+                <img src="LOGO_UNIVERSITAS_PELITA_BANGSA (1).png"   style="height: 95px; width: 115px; margin-left: 10px; margin-bottom: 6px;" class="hima" >
+             
+            </div>
+            
+        </div>  
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="hero-img.png">
+                </div>  
+
+       
+     </section>
+     
+<!-- about section -------------------------------------------------------------------->
+<section id="about" class="about">
+    <div class="img-about">
+        <div class="about-gallery"> 
+        <div class="port-box">
+            <div class="port-image">
+                <img src="hima1.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>HIMABIDA</h3>
+                <p>
+                    "Angkatan Tahun 2024" 
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="port-box">
+            <div class="port-image">
+                <img src="hima1.jpg" alt="">
+            </div>
+            <div class="port-content">
+                <h3>HIMABIDA</h3>
+                <p>
+                    "Angkatan Tahun 2025" 
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="about-content">
+        <span style="color: #D8EEFE;">The history of HIMABIDA</span>
+        <h3>Himpunan Mahasiswa Bisnis Digital</h3>
+            <span style="color: #D8EEFE;">About Us</span>
+            <p class="text-justify"> Himpunan Mahasiswa Bisnis Digital (HIMABIDA) dibentuk sebagai wadah bagi mahasiswa program studi Bisnis Digital untuk mengembangkan keterampilan akademik, profesional, dan sosial. Seiring dengan berkembangnya ekonomi digital dan transformasi bisnis berbasis teknologi, kebutuhan akan komunitas yang mendukung mahasiswa dalam memahami tren industri, inovasi digital, dan strategi bisnis semakin meningkat. Oleh karena itu, HIMABIDA hadir untuk memberikan ruang bagi mahasiswa dalam berkolaborasi, berbagi pengetahuan, serta mengembangkan ide-ide kreatif yang relevan dengan dunia bisnis digital.<p>
+            <p class="text-justify"> Sejak didirikan, HIMABIDA telah aktif dalam menyelenggarakan berbagai kegiatan seperti seminar, makrab, pelatihan kepemimpinan, dan kompetisi. Selain itu, himpunan ini juga menjalin kerja sama dengan perusahaan teknologi dan startup untuk memberikan wawasan langsung kepada mahasiswa tentang dunia industri. Program mentoring dan networking yang disediakan oleh HIMABIDA bertujuan untuk membangun keterampilan praktis serta membekali mahasiswa dengan pengetahuan yang dapat diterapkan di dunia kerja.</p>
+        <div class="btn-box">
+            <a href="about.html" class="btnbox">Baca Selengkapnya!</a>
+        </div>
+    </div>
+</section>
+
+<!-- structure section ------------------------- ------------------------------------------>
+<section id="structure" class="structure">
+        <div class="structure-content" style="text-align: center;" height="500px">
+            <h3  style="color:rgb(36, 32, 32);">STRUCTURE</h3>
+            <span style="color:rgb(36, 32, 32);">
+                "Himpunan Mahasiswa Bisnis Digital"
+            </span>
+            <div class="structure-tabs" style="margin-top: 20px;">
+                <button class="tab-button" data-tab="angkatanbaru">Angkatan Tahun 2025</button>
+            </div>
+        </div>
+    
+    <div class="tree angkatanbaru active">
+        <ul>
+            <li><a href="#"> <img src="ketua.jpg" alt=""><p >RIANA SANDI</p><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua</span> </a> 
+                <ul>
+                    <li><a href="#"> <img src="wakil.jpg" alt=""><P>CUT FARRAH</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Wakil Ketua</span> </a> 
+                        <ul>
+                            <li><a href="#"> <img src="Sekretaris 1.jpg" alt=""><P> LATIFA WAHYU</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Sekretaris 1</span> </a> 
+                                <ul>
+                                    <li><a href="#"> <img src="EKOBIS.jpg" alt=""><P>M.AZHARI ATTAMIMI</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Ekobis</span> </a> </li>
+                                 </ul>
+                            </li>
+                            <li><a href="#"> <img src="Sekretaris 2.jpg" alt=""><P>CINTYA BELLA</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Sekretaris 2</span> </a> 
+                                <ul>
+                                    <li><a href="#"> <img src="SOSDIS.jpg" alt=""><P>MOH.RIDHO NAJAFI</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Sosdis</span> </a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> <img src="Bendahara1.jpg" alt=""><P>NADILLA NURAZIZAH</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Bendahara 1</span> </a> 
+                                <ul>
+                                    <li><a href="#"> <img src="HUMAS.jpg" alt=""><P>FERLIN</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Humas</span> </a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> <img src="Bendahara2.jpg" alt=""><P>VIVIAN TESHALONIKA</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Bendahara 2</span> </a>  
+                                <ul>
+                                    <li><a href="#"> <img src="MEDFOKOMS.jpg" alt=""><P>ALYA SAUSAN ZAHRA</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Medfokom</span> </a> </li>
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                        
+                    </li>
+                </ul>
+             </li>
+        </ul>
+    </div>
+    <div class="btn-box" style="justify-content: center; width: 100%;">
+        <a href="team.html" class="btnboxs" >Check Full Team!</a>
+    </div>
+    <div class="structure-tabs" style="margin-top: 100px;">
+        <button class="tab-button" data-tab="angkatanlama">Angkatan Tahun 2024</button>
+    </div>
+    <div class="tree angkatanlama">
+        <ul>
+            <li><a href="#"> <img src="ketua.jpg" alt=""><p >VALENTINO ROSSI</p><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua</span> </a> 
+                <ul>
+                    <li><a href="#"> <img src="wakil.jpg" alt=""><P>CUT FARRAH</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Wakil Ketua</span> </a> 
+                        <ul>
+                            <li><a href="#"> <img src="Sekretaris 1.jpg" alt=""><P> LATIFA WAHYU</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Sekretaris 1</span> </a> 
+                                <ul>
+                                    <li><a href="#"> <img src="EKOBIS.jpg" alt=""><P>M.AZHARI ATTAMIMI</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Ekobis</span> </a> </li>
+                                 </ul>
+                            </li>
+                            <li><a href="#"> <img src="Sekretaris 2.jpg" alt=""><P>CINTYA BELLA</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Sekretaris 2</span> </a> 
+                                <ul>
+                                    <li><a href="#"> <img src="SOSDIS.jpg" alt=""><P>MOH.RIDHO NAJAFI</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Sosdis</span> </a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> <img src="Bendahara1.jpg" alt=""><P>NADILLA NURAZIZAH</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Bendahara 1</span> </a> 
+                                <ul>
+                                    <li><a href="#"> <img src="HUMAS.jpg" alt=""><P>FERLIN</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Humas</span> </a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> <img src="Bendahara2.jpg" alt=""><P>VIVIAN TESHALONIKA</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Bendahara 2</span> </a>  
+                                <ul>
+                                    <li><a href="#"> <img src="MEDFOKOMS.jpg" alt=""><P>ALYA SAUSAN ZAHRA</P><span style="color:rgb(36, 32, 32); font-weight: bold;">Ketua Divisi Medfokom</span> </a> </li>
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                        
+                    </li>
+                </ul>
+             </li>
+        </ul>
+    </div>
+    <div class="btn-box" style="justify-content: center; width: 100%;">
+        <a href="team2024.html" class="btnboxs" >Check Full Team!</a>
+    </div>
+
+</section>
+<!-- events section -->
+<section id="events" class="events" style="background: #205c8b; padding: 70px 5%;">
+    <div class="events-content">
+        <h3 style="font-size: 28px; text-align: center;"><span>EVENT </span>HIMABIDA</h3>
+       
+        
+         <!-- Animated Description Text -->
+         <div id="animated-description" class="blockquote-style" style="padding-top:1px;"></div>
+         <!-- Event Tabs -->
+         <div class="event-tabs" style="margin-top: 20px;">
+             <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+             <button class="tab-btn" data-tab="ended">Ended</button>
+         </div>
+ 
+         <!-- Rest of your existing event cards and content... -->
+         
+     </div>
+ 
+     <style>
+         #animated-description span {
+             color: #ffffff;
+             font-size: 1rem;
+             transition: all 0.8s ease;
+             position: relative;
+         }
+         
+         #animated-description span.active {
+             color:#001C8E;
+             text-shadow: 0 0 10px#001C8E;
+             font-weight: bold;
+         }
+
+         .blockquote-style {
+    border-left: 4px solid #001C8E;
+    padding-left: 20px;
+    margin: 20px 0;
+    text-align: justify;
+    font-style: italic;
+    position: relative;
+}
+
+.blockquote-style::before {
+   
+    font-size: 3rem;
+    color: rgba(0, 253, 219, 0.2);
+    position: absolute;
+    left: 10px;
+    top: -15px;
+}
+     </style>
+ 
+     <script>
+         // Your existing rotating words script can stay here
+         
+         // Add this for the animated description
+         document.addEventListener('DOMContentLoaded', function() {
+             const fullText = 'Event HIMABIDA adalah serangkaian kegiatan yang dirancang untuk memberikan pengetahuan, keterampilan, dan peluang networking bagi anggota HIMABIDA dan masyarakat umum. Melalui acara ini, kami juga mendorong partisipasi aktif dalam kegiatan sosial yang bertujuan untuk meningkatkan kepedulian terhadap isu-isu sosial. Acara ini tidak hanya bermanfaat bagi pengembangan keterampilan, tetapi juga mempererat hubungan antar sesama anggota dan masyarakat. Dengan semangat kolaborasi, kami berharap dapat menciptakan dampak positif dan membuka peluang untuk berkembang bersama.';
+             
+             const container = document.getElementById('animated-description');
+             const words = fullText.split(' ');
+             
+             // Render all words
+             words.forEach(word => {
+                 const span = document.createElement('span');
+                 span.textContent = word + ' ';
+                 container.appendChild(span);
+             });
+             
+             const wordElements = container.querySelectorAll('span');
+             let currentIndex = 0;
+             
+             function highlightWord() {
+                 // Reset all words
+                 wordElements.forEach(word => {
+                     word.classList.remove('active');
+                 });
+                 
+                 // Highlight current word
+                 if (currentIndex < wordElements.length) {
+                     wordElements[currentIndex].classList.add('active');
+                 }
+                 
+                 // Move to next word
+                 currentIndex = (currentIndex + 1) % wordElements.length;
+                 
+                 // Adjust speed here (2000ms = 2 seconds per word)
+                 setTimeout(highlightWord, 1000);
+             }
+             
+             // Start animation after 1 second
+             setTimeout(highlightWord, 1000);
+         });
+     </script>
+
+        <!-- Event Slider Container -->
+        <div class="events-slider-container">
+            <!-- Upcoming Events -->
+            <div class="events-slider upcoming active">
+                <div class="events-container">
+                    <!-- Event Card 1 -->
+                    <div class="event-card">
+                        <div class="event-img">
+                            <img src="Coming.jpg" alt="Seminar Digital Marketing">
+                            <div class="event-date">
+                                <span style="color:#D8EEFE">TBA</span>
+                              
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>HIMABIDA FEST</h3>
+                            <p><i class='bx bx-time'></i> - </p>
+                            <p><i class='bx bx-map'></i> - </p>
+                            <p>Kegiatan ini sebagai ajang kompetisi untuk menyalurkan Kreativitas, Inovasi & Kolaborasi antar Mahasiswa.</p>
+                            <a href="#" class="btn-event">Daftar Sekarang</a>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="event-card">
+                        <div class="event-img">
+                            <img src="Coming.jpg" alt="Makrab HIMABIDA">
+                            <div class="event-date">
+                                <span style="color:#D8EEFE">TBA</span>
+                             
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Field Study - Part 3</h3>
+                            <p><i class='bx bx-time'></i> - </p>
+                            <p><i class='bx bx-map'></i> - </p>
+                            <p>Kunjungan mahasiswa ke company untuk memahami langsung proses dan strategi bisnis.</p>
+                            <a href="#" class="btn-event">Daftar Sekarang</a>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="event-card">
+                        <div class="event-img">
+                            <img src="Coming.jpg" alt="Workshop E-Commerce">
+                            <div class="event-date">
+                                <span style="color:#D8EEFE">TBA</span>
+                              
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>MUBES (Musyawarah Besar)</h3>
+                            <p><i class='bx bx-time'></i> - </p>
+                            <p><i class='bx bx-map'></i> - </p>
+                            <p>Rapat besar untuk membahas atau memutuskan hal-hal penting dalam HIMABIDA.</p>
+                            <a href="#" class="btn-event">Daftar Sekarang</a>
+                        </div>
+                    </div>
+                
+
+                    <!-- Event Card 6 -->
+                    <div class="event-card">
+                        <div class="event-img">
+                            <img src="Coming.jpg" alt="Workshop E-Commerce">
+                            <div class="event-date">
+                                <span style="color:#D8EEFE">TBA</span>
+                            
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>KBB (Keringetan Bareng Bisdi)</h3>
+                            <p><i class='bx bx-time'></i> - </p>
+                            <p><i class='bx bx-map'></i> - </p>
+                            <p>Kegiatan ini berupa olahraga bersama, yakni bermain futsal dan badminton guna mencapai kebersamaan.</p>
+                            <a href="#" class="btn-event">Daftar Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+<!-- Ended Events -->
+<div class="events-slider ended">
+    <div class="events-container">
+        <!-- Event Card 4 -->
+        <div class="event-card">
+            <div class="event-img">
+                <img src="Kbb.jpg" alt="Webinar Fintech">
+                <div class="event-date">
+                    <span>12</span>
+                    <span>Okt</span>
+                </div>
+            </div>
+            <div class="event-info">
+                <h3>KBB (Keringetan Bareng Bisdi)</h3>
+                <p><i class='bx bx-time'></i> 14:00 - 17:00 WIB</p>
+                <p><i class='bx bx-map'></i> GOR Isal, Taman Sentosa, Cikarang</p>
+                <p>Kegiatan ini berupa olahraga bersama, yakni bermain futsal dan badminton guna mencapai kebersamaan.</p>
+                <a href="#" class="btn-event ended-btn">Lihat Kegiatan</a>
+            </div>
+        </div>
+
+        <!-- Event Card 5 -->
+        <div class="event-card">
+            <div class="event-img">
+                <img src="Ecobook.jpg" alt="Pelatihan Public Speaking" width="100%">
+                <div class="event-date">
+                    <span>28</span>
+                    <span>Jul</span>
+                </div>
+            </div>
+            <div class="event-info">
+                <h3>Litbook & Ecopark</h3>
+                <p><i class='bx bx-time'></i> 15:00 WIB - Selesai</p>
+                <p><i class='bx bx-map'></i> Meikarta Centra Park</p>
+                <p>Melakukan Kegiatan seperti Membaca Buku, Membuat Konten, Pinik Bersama, Jalan-jalan Sore.</p>
+                <a href="#" class="btn-event ended-btn">Lihat Kegiatan</a>
+            </div>
+        </div>
+
+        <!-- Event Card 6 -->
+        <div class="event-card">
+            <div class="event-img">
+                <img src="3B.jpg" alt="Lomba Bisnis Plan">
+                <div class="event-date">
+                    <span>9</span>
+                    <span>Mar</span>
+                </div>
+            </div>
+            <div class="event-info">
+                <h3>3B (Batal Bareng Bisdig)</h3>
+                <p><i class='bx bx-time'></i> 15:00 WIB - Selesai</p>
+                <p><i class='bx bx-map'></i> Kampoeng Seafood Sejati. Jl. Puspa Raya</p>
+                <p>Kegiatan ini berupa Buka bareng bersama untuk menjalin silaturahmi antar Mahasiswa Bisnis Digital</p>
+                <a href="#" class="btn-event ended-btn">Lihat Kegiatan</a>
+            </div>
+        </div>
+        <!-- Event Card 7 -->
+        <div class="event-card">
+            <div class="event-img">
+                <img src="Makrab.jpg" alt="Lomba Bisnis Plan">
+                <div class="event-date">
+                    <span>Sept</span>
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="event-info">
+                <h3>Makrab (Malam Keakraban)</h3>
+                <p><i class='bx bx-time'></i> Tanggal 28 - 29 September</p>
+                <p><i class='bx bx-map'></i> Villa CH 91 Tropis</p>
+                <p>Celebration Of Digital Business - Rayakan, Akrabkan, Kobarkan Kebersamaan untuk memperkuat persaudaraan.</p>
+                <a href="#" class="btn-event ended-btn">Lihat Kegiatan</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slider Dots -->
+<div class="slider-dots" style="text-align: center; margin-top: 30px;">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- blog section -->
+<section id="blog" class="blog" style="background: #D8EEFE; padding: 70px 5%;">
+    <div class="blog-content">
+        <h1 style="font-size: 28px; color: rgb(36, 32, 32); text-align: center;"><span>ARTIKEL</span> HIMABIDA</h1>
+         
+        <blockquote style="
+        border-left: 4px solid #205c8b;
+        padding: 15px;
+        background: rgba(0, 253, 219, 0.05);
+        margin: 5px 0;
+        text-align: justify;
+        font-style: italic;
+    ">
+        <div class="change-text" style="font-size: 19px; margin-top: 15px;">
+            <h3 style=" color: rgb(36, 32, 32);">Temukan wawasan baru</h3>
+            <h3>
+                <span class="word">untuk&nbsp;mengembangkan&nbsp;bisnismu</span>
+                <span class="word">tentang&nbsp;dunia&nbsp;digital</span>
+                <span class="word">dan&nbsp;inspirasi&nbsp;terkini</span>
+            </h3>
+        </div>
+        <p class="text-justify animated-text" style="padding-top:1px;"></p>
+    </blockquote>
+    
+    <style>
+        .animated-text span {
+            color: rgb(36, 32, 32);
+            transition: all 0.8s ease;
+            position: relative;
+        }
+        .animated-text span.active {
+            color: #001C8E;
+            text-shadow: #001C8E;
+            font-weight: bold;
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fullText = 'Blog HIMABIDA menjadi wadah informasi dan inspirasi yang dikemas secara edukatif dan relevan dengan perkembangan era digital. Melalui beragam artikel seputar bisnis, teknologi, dan pengembangan diri, kami berkomitmen menghadirkan konten yang tidak hanya memperluas wawasan, tetapi juga mendorong terciptanya generasi muda yang adaptif, inovatif, dan visioner dalam menghadapi tantangan dunia digital yang terus berkembang.';
+            const container = document.querySelector('.animated-text');
+            const words = fullText.split(' ');
+    
+            // Render all words
+            words.forEach(word => {
+                const span = document.createElement('span');
+                span.textContent = word + ' ';
+                container.appendChild(span);
+            });
+    
+            const wordElements = container.querySelectorAll('span');
+            let currentIndex = 0;
+    
+            function highlightWord() {
+                // Reset all words
+                wordElements.forEach(word => {
+                    word.classList.remove('active');
+                });
+    
+                // Highlight current word
+                if (currentIndex < wordElements.length) {
+                    wordElements[currentIndex].classList.add('active');
+                }
+    
+                // Move to next word
+                currentIndex = (currentIndex + 1) % wordElements.length;
+    
+                // Adjust speed (1000ms = 1 second per word)
+                setTimeout(highlightWord, 1000);
+            }
+    
+            // Start animation
+            setTimeout(highlightWord, 1000);
+        });
+    </script>
+        
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="blog1.jpg" alt="Trend Bisnis Digital 2025">
+                    <div class="blog-category">Bisnis</div>
+                </div>
+                <div class="blog-info">
+                    <span class="blog-date"><i class='bx bx-calendar'></i> 30 April 2025</span>
+                    <h3>5 Trend Bisnis Digital yang Akan Dominasi di 2025</h3>
+                    <p>Pelajari tren terbaru yang akan mengubah lanskap bisnis digital di tahun mendatang dan bagaimana mempersiapkannya...</p>
+                    <a href="#" class="btn-blog">Baca Selengkapnya <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="blog2.jpg" alt="Tips Branding Digital">
+                    <div class="blog-category">Marketing</div>
+                </div>
+                <div class="blog-info">
+                    <span class="blog-date"><i class='bx bx-calendar'></i> 28 April 2025</span>
+                    <h3>7 Strategi Branding Digital untuk Pemula</h3>
+                    <p>Bagaimana membangun brand yang kuat di era digital? Temukan strategi praktis yang bisa langsung Anda terapkan...</p>
+                    <a href="#" class="btn-blog">Baca Selengkapnya <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="blog3.jpg" alt="Kisah Sukses Startup">
+                    <div class="blog-category">Inspirasi</div>
+                </div>
+                <div class="blog-info">
+                    <span class="blog-date"><i class='bx bx-calendar'></i> 15 April 2025</span>
+                    <h3>Kisah Sukses Startup Lokal yang Go International</h3>
+                    <p>Belajar dari perjalanan startup lokal yang berhasil menembus pasar global dan apa rahasia kesuksesan mereka...</p>
+                    <a href="#" class="btn-blog">Baca Selengkapnya <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-box" style="justify-content: center; width: 100%;">
+            <a href="#" class="btnboxs" style="margin-top: 30px;">Lihat Semua Artikel</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== COLLABORATION SECTION ===== -->
+<section style="
+    background: #205c8b;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+
+    border-radius: 8px;
+">
+    <div style="
+        max-width: 800px;
+        margin: 0 auto;
+    ">
+        <h2 style="
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #D8EEFE;
+            font-weight: 700;
+        ">Let’s to Partner With Us!</h2>
+        <p style="
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        ">Join our network of collaborators and let's create something amazing together.</p>
+        <a href="partnership.html" style="
+            display: inline-block;
+            background: transparent;
+            color: #D8EEFE;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #D8EEFE;
+            transition: all 0.3s;
+        " 
+        onmouseover="this.style.background='#D8EEFE       '; this.style.color='rgb(36, 32, 32)  '" 
+        onmouseout="this.style.background='transparent'; this.style.color='#D8EEFE '">Become a Partner</a>
+    </div>
+</section>
+<hr style=" width: 100%;
+height: 10px;
+color: white;
+background: #D8EEFE;
+border: none;
+"
+
+>
+ <!-- Contact Section -->
+ <section class="contact-sectionss">
+    <div class="containerss">
+        <h2>Hubungi <span style="color: var(--secondary-color);">Kami</span></h2>
+        <div class="contact-containers">
+            <div class="contact-forms">
+                <h3>Kirim Pesan</h3>
+                <form method="post" name="wpu-contact-form" action="" class="scroll-top">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="nama" placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Nomor HP</label>
+                        <input type="text" id="number" name="number" placeholder="Nomor HP">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" placeholder="Pesan Anda"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="sendMessage(event)" action="https://script.google.com/macros/s/AKfycbwICW7CVt6Uc9RXhobYfdwmrfg15lGI1g2HPicViIfHhbormwor5fjDPgPlO5fGMXKA/exec">Kirim Pesan</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <div class="info-item">
+                    <i class='bx bx-map'></i>
+                    <div class="info-content">
+                        <h4>Alamat</h4>
+                        <p>Jl. Inspeksi Kalimalang, Tegal Danas Arah Deltamas, Cibatu, Kec. Cikarang Pusat, Bekasi, Jawa Barat 17530</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-envelope'></i>
+
+<div class="info-content">
+                        <h4>Email</h4>
+                        <a href="mailto:Himabidanew@gmail.com">Himabidanew@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-phone'></i>
+                    <div class="info-content">
+                        <h4>Telepon</h4>
+                        <p>+62 123 4567 890</p>
+                    </div>
+                </div>
+                <div class="map-containers">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5351963636826!2d107.16658007355592!3d-6.324611661884165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b0c08ad8d01%3A0x2b18001d1b1371f9!2sUNIVERSITAS%20PELITA%20BANGSA!5e0!3m2!1sid!2sid!4v1742002149578!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- footer website -->
+<footer >
+
+    <div class="row">
+        <div class="col">
+            <img src="hima2.png"   style="height: 150px; width: 150px; margin-left: 50px;
+            margin-top: 19px;" class="hima" >
+        
+        </div>
+        <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>Jl. Inspeksi Kalimalang</p>
+            <p>Tegal Danas Arah Deltamas</p>
+            <p>Cibatu, Kec. Cikarang Pusat, Bekasi </p>
+            <p>Jawa Barat 17530</p>
+            <p class="email-id">Himabidanew@gmail.com</p>
+        </div>
+
+        
+        <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="#home" style="color: rgb(36, 32, 32); font-weight: 500;">Home</a></li>
+                <li><a href="#about" style="color: rgb(36, 32, 32); font-weight: 500;">About</a></li>
+                <li><a href="#structure" style="color: rgb(36, 32, 32); font-weight: 500;">Structure</a></li>
+                <li><a href="#events" style="color: rgb(36, 32, 32); font-weight: 500;">Events</a></li>
+                <li><a href="#blog" style="color: rgb(36, 32, 32); font-weight: 500;">Blog</a></li>
+            </ul>
+ 
+        </div>
+
+        <div class="col">
+           
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form onsubmit="showAlert(event)" style=" padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(36, 32, 32);
+            margin-bottom: 50px;">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Masukan email anda" required>
+                <button type="submit" ><i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+            <div class="social-icons" style="margin-top: 1rem;">
+                <a href="https://www.instagram.com/himabisnisdigital_upb?igsh=OXZ3MHpvdno1eXpp"><i class='bx bxl-instagram'></i></a>
+                <a href="https://m.youtube.com/@bisnisdigitalupbofficial"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://www.tiktok.com/@himabidaupb?_t="><i class='bx bxl-tiktok' ></i></a>
+            </div>  
+            
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright &copy; 2025 by Himpunan Mahasiswa Bisnis Digital || All Right Reserved.</p>
+ </footer>
+ <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyM26AxkD1h_OLtQ-Vk44ByWuuFT9zpJojL2vBIBk-MFiudJMhYnOK3WTVr-__r-R7RBg/exec';
+        const form = document.forms['wpu-contact-form']
+
+
+        function sendMessage(event) {
+      event.preventDefault(); // Mencegah refresh halaman
+
+      // Ambil nilai input
+      let number = document.getElementById("number").value.trim();
+      let email = document.getElementById("email").value.trim();
+
+      // Cek apakah nomor HP atau email kosong
+      if (number === "" || email === "") {
+          swal({
+              title: "Gagal!",
+              text: "Nomor HP dan Email harus diisi.",
+              icon: "error",
+          });
+          return; // Hentikan proses jika ada input yang kosong
+      }
+
+      // Jika semua input terisi, lanjutkan pengiriman data
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+              swal({
+                  title: "Berhasil!",
+                  text: "Pesan Anda telah dikirim.",
+                  icon: "success",
+              }).then(() => {
+                  form.reset(); // Reset form setelah alert ditutup
+              });
+          })
+          .catch(error => {
+              swal({
+                  title: "Gagal!",
+                  text: "Terjadi kesalahan saat mengirim pesan.",
+                  icon: "error",
+              });
+          });
+  }
+
+    
+
+       
+      </script>
+
+      <script>
+  function showAlert(event) {
+    event.preventDefault(); // Mencegah form melakukan submit (refresh halaman)
+
+    swal({
+      title: "Successfully",
+      text: "Terimakasih sudah mengaktifkan newsletter kami!",
+      icon: "success",
+    });
+  }
+</script>
+</body>
+</html>
